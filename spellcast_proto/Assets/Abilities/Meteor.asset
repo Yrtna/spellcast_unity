@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SimpleShoot
   m_EditorClassIdentifier: 
   Name: SimpleShoot
-  iconSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  BaseCooldown: 3
+  iconSprite: {fileID: 21300000, guid: 2d0997ac1b1fd664e98202450e7ea2d7, type: 3}
+  BaseCooldown: 0
   projectileForce: 250
-  projectile: {fileID: 2103736312582901695, guid: b9b1c7f3f6b6cd848877e602b7a5af36, type: 3}
+  projectile: {fileID: 5947646782605642516, guid: 64f3fb60cf23c8b40a9861ff85b2cbf4, type: 3}
