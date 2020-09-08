@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9974af6b2e5ce943aa4120e3e440b4d, type: 3}
+  m_Name: SimpleShoot
+  m_EditorClassIdentifier: 
+  Name: SimpleShoot
+  iconSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  BaseCooldown: 3
+  projectileForce: 250
+  projectile: {fileID: 2103736312582901695, guid: b9b1c7f3f6b6cd848877e602b7a5af36, type: 3}
