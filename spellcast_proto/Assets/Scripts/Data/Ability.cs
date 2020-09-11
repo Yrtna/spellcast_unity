@@ -7,6 +7,7 @@ namespace Data
         public string Name = "New Ability";
         public Sprite iconSprite;
         public float BaseCooldown = 1f;
+        public string BindName = "New Bind";
 
         public abstract void Initialize(GameObject obj);
         public abstract void TriggerAbility();

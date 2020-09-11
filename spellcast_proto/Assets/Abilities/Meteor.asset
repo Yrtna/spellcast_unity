@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9974af6b2e5ce943aa4120e3e440b4d, type: 3}
-  m_Name: SimpleShoot
+  m_Name: Meteor
   m_EditorClassIdentifier: 
-  Name: SimpleShoot
+  Name: Meteor
   iconSprite: {fileID: 21300000, guid: 2d0997ac1b1fd664e98202450e7ea2d7, type: 3}
-  BaseCooldown: 0
-  projectileForce: 250
-  projectile: {fileID: 5947646782605642516, guid: 64f3fb60cf23c8b40a9861ff85b2cbf4, type: 3}
+  BaseCooldown: 0.5
+  BindName: Fire1
+  projectileForce: 300
+  projectile: {fileID: 54307646593548836, guid: 3bbebb6123d7fdd4fa718a9ea192c837, type: 3}

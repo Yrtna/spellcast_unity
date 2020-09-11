@@ -7,7 +7,6 @@ namespace Behaviours
 {
     public class AbilityCooldown : MonoBehaviour
     {
-        public string abilityButtonAxisName = "Fire1";
         public Image darkMask;
         public Text cooldownText;
 
@@ -48,7 +47,7 @@ namespace Behaviours
             if (cooldownComplete)
             {
                 AbilityReady();
-                if (Input.GetButtonDown(abilityButtonAxisName))
+                if (Input.GetButton(ability.BindName))
                     ButtonTriggered();
             }
             else
