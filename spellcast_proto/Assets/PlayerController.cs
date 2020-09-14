@@ -66,11 +66,11 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        _isGrounded = Physics.CheckSphere(_groundChecker.position, GroundDistance, Ground,
-            QueryTriggerInteraction.Ignore);
-        _inputs = Vector3.zero;
-        _inputs.x = Input.GetAxis("Horizontal");
-        _inputs.z = Input.GetAxis("Vertical");
+        // _isGrounded = Physics.CheckSphere(_groundChecker.position, GroundDistance, Ground,
+        //     QueryTriggerInteraction.Ignore);
+        // _inputs = Vector3.zero;
+        // _inputs.x = Input.GetAxis("Horizontal");
+        // _inputs.z = Input.GetAxis("Vertical");
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         // _body.MovePosition(_body.position + _inputs * (Speed * Time.fixedDeltaTime));
-        MyMovePosition(_body.position + _inputs * (Speed * Time.fixedDeltaTime));
+        // MyMovePosition(_body.position + _inputs * (Speed * Time.fixedDeltaTime));
     }
 
     private void LateUpdate()

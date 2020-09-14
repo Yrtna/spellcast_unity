@@ -1,4 +1,5 @@
 ﻿using Behaviours;
+using UnityEditor;
 using UnityEngine;
 
 namespace Data
@@ -8,18 +9,18 @@ namespace Data
     {
         public float projectileForce = 250f;
         public Rigidbody projectile;
-
-        private ProjectileShootTriggerable _launcher;
+        private Transform _bulletSpawn;
+        
         public override void Initialize(GameObject obj)
         {
-            _launcher = obj.GetComponent<ProjectileShootTriggerable>();
-            _launcher.projectileForce = projectileForce;
-            _launcher.projectile = projectile;
+            _bulletSpawn = GameObject.FindWithTag("BulletSpawn").transform;
+            AbilityGuid = GUID.Generate();
         }
 
         public override void TriggerAbility()
         {
-            _launcher.Launch();
+            var clonedBullet = Instantiate(projectile, _bulletSpawn.position, _bulletSpawn.rotation) as Rigidbody;
+            clonedBullet.AddForce(_bulletSpawn.transform.forward * projectileForce);
         }
     }
 }

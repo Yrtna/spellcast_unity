@@ -9,6 +9,7 @@ namespace Behaviours
     {
         public Image darkMask;
         public Text cooldownText;
+        public GameObject canvasAbility;
 
         [SerializeField] private Ability ability;
         [SerializeField] private GameObject weaponHolder;
@@ -26,7 +27,7 @@ namespace Behaviours
         private void Initialize(Ability selectedAbility, GameObject weaponHolderGameObject)
         {
             ability = selectedAbility;
-            _buttonImage = GetComponent<Image>();
+            _buttonImage = canvasAbility.GetComponent<Image>();
             _buttonImage.sprite = ability.iconSprite;
             darkMask.sprite = ability.iconSprite;
             _cooldownDuration = ability.BaseCooldown;

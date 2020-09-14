@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bullet
+  - FxTemporaire
+  - BulletSpawn
   layers:
   - Default
   - TransparentFX

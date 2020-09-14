@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 
 namespace Data
 {
     public abstract class Ability : ScriptableObject
     {
+        public GUID AbilityGuid;
         public string Name = "New Ability";
         public Sprite iconSprite;
         public float BaseCooldown = 1f;
