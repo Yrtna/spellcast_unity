@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 114739553554106530}
   - component: {fileID: 54541909365624938}
   - component: {fileID: 135759175376650130}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: vfx_Projectile_SwordIce
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 4999593573198962}
   - component: {fileID: 198191926992983498}
   - component: {fileID: 199669249957339250}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmokeStatic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4932,7 +4932,7 @@ GameObject:
   - component: {fileID: 4527120596611858}
   - component: {fileID: 198316648246852330}
   - component: {fileID: 199993720091713562}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9745,7 +9745,7 @@ GameObject:
   - component: {fileID: 4800853814970608}
   - component: {fileID: 199301579695707752}
   - component: {fileID: 198985663612858464}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14593,7 +14593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4822390486932036}
   - component: {fileID: 96475353849234560}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14732,7 +14732,7 @@ GameObject:
   - component: {fileID: 4479237708039964}
   - component: {fileID: 198728776474870092}
   - component: {fileID: 199230963640890240}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ParticlesStatic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19567,7 +19567,7 @@ GameObject:
   - component: {fileID: 4063795542222750}
   - component: {fileID: 198256628447993620}
   - component: {fileID: 199847571065093468}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

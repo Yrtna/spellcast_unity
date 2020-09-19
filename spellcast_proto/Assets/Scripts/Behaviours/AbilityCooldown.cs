@@ -72,7 +72,7 @@ namespace Behaviours
             darkMask.enabled = true;
             cooldownText.enabled = true;
             
-            ability.TriggerAbility();
+            ability.TriggerAbility(gameObject.transform);
         }
     }
 }

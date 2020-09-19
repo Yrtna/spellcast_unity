@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4673370689012356}
   - component: {fileID: 198258387503466692}
   - component: {fileID: 199730873446412140}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FeatherAdd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4845,7 +4845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4551154909323150}
   - component: {fileID: 96477158095482030}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4987,7 +4987,7 @@ GameObject:
   - component: {fileID: 198504928883188364}
   - component: {fileID: 65225358510880318}
   - component: {fileID: 54618020288813474}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: vfx_Projectile_Feather
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9875,7 +9875,7 @@ GameObject:
   - component: {fileID: 4170918322448002}
   - component: {fileID: 198950316956202790}
   - component: {fileID: 199065222257316812}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}

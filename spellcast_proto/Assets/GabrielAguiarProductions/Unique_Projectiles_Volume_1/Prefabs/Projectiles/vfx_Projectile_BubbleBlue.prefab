@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4222861221312482}
   - component: {fileID: 198625322165679848}
   - component: {fileID: 199469042689600660}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4886,7 +4886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4387876685388940}
   - component: {fileID: 96790271689274504}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5028,7 +5028,7 @@ GameObject:
   - component: {fileID: 198075817535356192}
   - component: {fileID: 65650860391879862}
   - component: {fileID: 54777970317930892}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: vfx_Projectile_BubbleBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9980,7 +9980,7 @@ GameObject:
   - component: {fileID: 4543353468141156}
   - component: {fileID: 198666345037842568}
   - component: {fileID: 199690041906878720}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14856,7 +14856,7 @@ GameObject:
   - component: {fileID: 4857230170811802}
   - component: {fileID: 198403062172229204}
   - component: {fileID: 199498631542277762}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

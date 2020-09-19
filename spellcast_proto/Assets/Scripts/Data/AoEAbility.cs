@@ -16,10 +16,10 @@ namespace Data
             _player = GameObject.FindWithTag("Player");
             _mousePositionManager = _player.GetComponent<MousePositionManager>();
             _rigidbody = _player.GetComponent<Rigidbody>();
-            AbilityGuid = GUID.Generate();
+            // AbilityGuid = GUID.Generate();
         }
 
-        public override void TriggerAbility()
+        public override void TriggerAbility(Transform spawn)
         {
         }
     }

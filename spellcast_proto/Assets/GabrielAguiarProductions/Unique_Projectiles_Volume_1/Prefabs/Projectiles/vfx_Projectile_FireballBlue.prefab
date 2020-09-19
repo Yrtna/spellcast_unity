@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4672249477211790}
   - component: {fileID: 198799257433740906}
   - component: {fileID: 199730638222552254}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Swirl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4891,7 +4891,7 @@ GameObject:
   - component: {fileID: 4841670035184224}
   - component: {fileID: 198931592188301178}
   - component: {fileID: 199213422905256614}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9704,7 +9704,7 @@ GameObject:
   - component: {fileID: 4580714904906042}
   - component: {fileID: 198082175696260528}
   - component: {fileID: 199694022534035114}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14547,7 +14547,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4707805472296992}
   - component: {fileID: 96254091983794152}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14686,7 +14686,7 @@ GameObject:
   - component: {fileID: 4299412727531262}
   - component: {fileID: 198713039109322386}
   - component: {fileID: 199889294765360120}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19562,7 +19562,7 @@ GameObject:
   - component: {fileID: 4279133778901512}
   - component: {fileID: 198748462937176054}
   - component: {fileID: 199944654240619552}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fireball_Horizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24446,7 +24446,7 @@ GameObject:
   - component: {fileID: 198969432181178134}
   - component: {fileID: 54013935248017186}
   - component: {fileID: 136707689597492628}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: vfx_Projectile_FireballBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}

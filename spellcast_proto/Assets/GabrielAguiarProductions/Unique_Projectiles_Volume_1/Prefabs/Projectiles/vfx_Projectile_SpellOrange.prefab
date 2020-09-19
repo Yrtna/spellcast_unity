@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4175724221962164}
   - component: {fileID: 96660694867418570}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4808590832096036}
   - component: {fileID: 96333004746772180}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrailAB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 4572622955309552}
   - component: {fileID: 198765345971197024}
   - component: {fileID: 199285294356792230}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5091,7 +5091,7 @@ GameObject:
   - component: {fileID: 4828398092512172}
   - component: {fileID: 198322058363593520}
   - component: {fileID: 199618226897204626}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Swirl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9971,7 +9971,7 @@ GameObject:
   - component: {fileID: 4312408608713502}
   - component: {fileID: 198310119662004396}
   - component: {fileID: 199085450165201728}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DarkerTones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14855,7 +14855,7 @@ GameObject:
   - component: {fileID: 198528507335766104}
   - component: {fileID: 54813845547034192}
   - component: {fileID: 136757934063241816}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: vfx_Projectile_SpellOrange
   m_TagString: Untagged
   m_Icon: {fileID: 0}

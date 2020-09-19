@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 198858680741015720}
   - component: {fileID: 65272339866173868}
   - component: {fileID: 54964438602352006}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: vfx_Projectile_Carrot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4962,7 +4962,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4279838294882094}
   - component: {fileID: 96940464927281334}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}

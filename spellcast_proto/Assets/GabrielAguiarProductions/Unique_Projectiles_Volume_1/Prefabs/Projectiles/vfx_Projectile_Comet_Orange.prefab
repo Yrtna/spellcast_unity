@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4655438832590710}
   - component: {fileID: 198676682736739732}
   - component: {fileID: 199658042931521504}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4823,7 +4823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4225414840471886}
   - component: {fileID: 96812193569836938}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4962,7 +4962,7 @@ GameObject:
   - component: {fileID: 4725524036117482}
   - component: {fileID: 198869108720475514}
   - component: {fileID: 199357383993138772}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9775,7 +9775,7 @@ GameObject:
   - component: {fileID: 4099101466660372}
   - component: {fileID: 198441528813977468}
   - component: {fileID: 199116947354053388}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BallFireIn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14633,7 +14633,7 @@ GameObject:
   - component: {fileID: 4912357565851644}
   - component: {fileID: 198983782660019298}
   - component: {fileID: 199953076915996962}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19446,7 +19446,7 @@ GameObject:
   - component: {fileID: 4581516589832850}
   - component: {fileID: 198680747529647698}
   - component: {fileID: 199474052734033910}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmokeDark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24260,7 +24260,7 @@ GameObject:
   - component: {fileID: 114411837893322254}
   - component: {fileID: 54307646593548836}
   - component: {fileID: 135447165041960418}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: vfx_Projectile_Comet_Orange
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -24346,7 +24346,7 @@ GameObject:
   - component: {fileID: 4673636334109332}
   - component: {fileID: 198829883632193314}
   - component: {fileID: 199129947771358830}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BeamFlare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29181,7 +29181,7 @@ GameObject:
   - component: {fileID: 4031703366499630}
   - component: {fileID: 199762296293650622}
   - component: {fileID: 198250728584730168}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BallFireOut
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4647541207564378}
   - component: {fileID: 96594264814375190}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,7 +153,7 @@ GameObject:
   - component: {fileID: 198007904117522096}
   - component: {fileID: 65932595672012692}
   - component: {fileID: 54526025840063382}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: vfx_Projectile_ArrowGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5134,7 +5134,7 @@ GameObject:
   - component: {fileID: 4148685472755828}
   - component: {fileID: 198891850615860660}
   - component: {fileID: 199087776913714618}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Triangles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9947,7 +9947,7 @@ GameObject:
   - component: {fileID: 4496230700166270}
   - component: {fileID: 198852193744838518}
   - component: {fileID: 199968709438726574}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14760,7 +14760,7 @@ GameObject:
   - component: {fileID: 4743457721073874}
   - component: {fileID: 198903050378625366}
   - component: {fileID: 199797455780701384}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ArrowAB
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4767501419212452}
   - component: {fileID: 198696176553392952}
   - component: {fileID: 199605260125069684}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4847,7 +4847,7 @@ GameObject:
   - component: {fileID: 114189001181818660}
   - component: {fileID: 54068825681662540}
   - component: {fileID: 135501841535656800}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: vfx_Projectile_SwordFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4933,7 +4933,7 @@ GameObject:
   - component: {fileID: 4687325235461700}
   - component: {fileID: 198872361655964286}
   - component: {fileID: 199592331240521336}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FireStatic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9769,7 +9769,7 @@ GameObject:
   - component: {fileID: 4508803550892464}
   - component: {fileID: 199671446621146902}
   - component: {fileID: 198601305972163970}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14618,7 +14618,7 @@ GameObject:
   - component: {fileID: 4805395303851868}
   - component: {fileID: 198381370294316624}
   - component: {fileID: 199129117045149246}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19431,7 +19431,7 @@ GameObject:
   - component: {fileID: 4321585009499686}
   - component: {fileID: 198043471455518334}
   - component: {fileID: 199137057145924194}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FireParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24243,7 +24243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4662739964337868}
   - component: {fileID: 96077677655454100}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24382,7 +24382,7 @@ GameObject:
   - component: {fileID: 4977856190643252}
   - component: {fileID: 198912231078185436}
   - component: {fileID: 199037723601299000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}

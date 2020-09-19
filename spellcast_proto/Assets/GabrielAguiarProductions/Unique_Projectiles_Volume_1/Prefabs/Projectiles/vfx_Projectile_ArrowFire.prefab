@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4042355475662214}
   - component: {fileID: 198082591875184486}
   - component: {fileID: 199050482690512254}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FireStatic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4847,7 +4847,7 @@ GameObject:
   - component: {fileID: 4039977936279884}
   - component: {fileID: 198271090898586372}
   - component: {fileID: 199916983671902640}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FireParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9660,7 +9660,7 @@ GameObject:
   - component: {fileID: 4916926005163670}
   - component: {fileID: 198601392901152204}
   - component: {fileID: 199050576094924816}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14496,7 +14496,7 @@ GameObject:
   - component: {fileID: 114348427670048902}
   - component: {fileID: 65349250874573500}
   - component: {fileID: 54677033593034642}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: vfx_Projectile_ArrowFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14580,7 +14580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4037403800722938}
   - component: {fileID: 96797837932596792}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14719,7 +14719,7 @@ GameObject:
   - component: {fileID: 4402309994346968}
   - component: {fileID: 198267878561070176}
   - component: {fileID: 199527039591843782}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19532,7 +19532,7 @@ GameObject:
   - component: {fileID: 4753770230066166}
   - component: {fileID: 199496421480627342}
   - component: {fileID: 198045246817194248}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

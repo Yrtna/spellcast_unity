@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UpperBodyMask_Lich
+  m_Mask: 00000000010000000100000000000000000000000100000001000000010000000100000000000000000000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Hips
+    m_Weight: 1
+  - m_Path: Hips/Spine
+    m_Weight: 1
+  - m_Path: Hips/Spine/Armor_L
+    m_Weight: 1
+  - m_Path: Hips/Spine/Armor_R
+    m_Weight: 1
+  - m_Path: Hips/Spine/Head
+    m_Weight: 1
+  - m_Path: Hips/Spine/Upper_Arm_L
+    m_Weight: 1
+  - m_Path: Hips/Spine/Upper_Arm_L/Lower_Arm_L
+    m_Weight: 1
+  - m_Path: Hips/Spine/Upper_Arm_L/Lower_Arm_L/Hand_L
+    m_Weight: 1
+  - m_Path: Hips/Spine/Upper_Arm_L/Lower_Arm_L/Hand_L/Index_Proximal_L
+    m_Weight: 1
+  - m_Path: Hips/Spine/Upper_Arm_R
+    m_Weight: 1
+  - m_Path: Hips/Spine/Upper_Arm_R/Rower_Arm_R
+    m_Weight: 1
+  - m_Path: Hips/Spine/Upper_Arm_R/Rower_Arm_R/Hand_R
+    m_Weight: 1
+  - m_Path: Hips/Spine/Upper_Arm_R/Rower_Arm_R/Hand_R/Index_Proximal_R
+    m_Weight: 1
+  - m_Path: Hips/Staff
+    m_Weight: 1
+  - m_Path: Hips/Upper_Leg_L
+    m_Weight: 1
+  - m_Path: Hips/Upper_Leg_L/Lower_Leg_L
+    m_Weight: 1
+  - m_Path: Hips/Upper_Leg_L/Lower_Leg_L/Foot_L
+    m_Weight: 1
+  - m_Path: Hips/Upper_Leg_L/Lower_Leg_L/Foot_L/Toes_L
+    m_Weight: 1
+  - m_Path: Hips/Upper_Reg_R
+    m_Weight: 1
+  - m_Path: Hips/Upper_Reg_R/Rower_Reg_R
+    m_Weight: 1
+  - m_Path: Hips/Upper_Reg_R/Rower_Reg_R/Foot_R
+    m_Weight: 1
+  - m_Path: Hips/Upper_Reg_R/Rower_Reg_R/Foot_R/Toes_R
+    m_Weight: 1
+  - m_Path: LichMesh
+    m_Weight: 1

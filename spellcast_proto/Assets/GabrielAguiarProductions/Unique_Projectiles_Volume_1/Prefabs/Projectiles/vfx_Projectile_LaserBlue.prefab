@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 198721829763906112}
   - component: {fileID: 65733735811122728}
   - component: {fileID: 54800842790183346}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: vfx_Projectile_LaserBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}

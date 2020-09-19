@@ -1,4 +1,5 @@
 ﻿using Behaviours;
+using Ludiq.PeekCore;
 using UnityEditor;
 using UnityEngine;
 
@@ -9,18 +10,20 @@ namespace Data
     {
         public float projectileForce = 250f;
         public Rigidbody projectile;
-        private Transform _bulletSpawn;
         
         public override void Initialize(GameObject obj)
         {
-            _bulletSpawn = GameObject.FindWithTag("BulletSpawn").transform;
-            AbilityGuid = GUID.Generate();
+            // AbilityGuid = GUID.Generate();
         }
 
-        public override void TriggerAbility()
+        public override void TriggerAbility(Transform spawn)
         {
-            var clonedBullet = Instantiate(projectile, _bulletSpawn.position, _bulletSpawn.rotation) as Rigidbody;
-            clonedBullet.AddForce(_bulletSpawn.transform.forward * projectileForce);
+            var clonedBullet = Instantiate(projectile, spawn.position + spawn.forward + spawn.up, spawn.rotation) as Rigidbody;
+            clonedBullet.AddForce(spawn.transform.forward * projectileForce);
+            var damageOnHit = clonedBullet.AddComponent<DamageOnHit>();
+            damageOnHit.Damage = damage;
+            damageOnHit.fromUnitType = spawn.tag;
         }
+
     }
 }

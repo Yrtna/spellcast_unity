@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4278310710862806}
   - component: {fileID: 198069788386361972}
   - component: {fileID: 199878084967403894}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4869,7 +4869,7 @@ GameObject:
   - component: {fileID: 4281975313455494}
   - component: {fileID: 198671392205749918}
   - component: {fileID: 199154855790110144}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9745,7 +9745,7 @@ GameObject:
   - component: {fileID: 4187161648812440}
   - component: {fileID: 198320226284811482}
   - component: {fileID: 199107498894201148}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14561,7 +14561,7 @@ GameObject:
   - component: {fileID: 198056607281063266}
   - component: {fileID: 65019340949975606}
   - component: {fileID: 54151073696178080}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: vfx_Projectile_RadioactiveBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

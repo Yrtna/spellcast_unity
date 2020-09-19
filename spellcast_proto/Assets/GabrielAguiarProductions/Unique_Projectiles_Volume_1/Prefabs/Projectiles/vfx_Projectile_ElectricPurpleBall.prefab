@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4858937482695692}
   - component: {fileID: 96035664195817048}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrailAB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 4105823258859568}
   - component: {fileID: 198575107678247754}
   - component: {fileID: 199422597222687222}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5025,7 +5025,7 @@ GameObject:
   - component: {fileID: 4264289279487840}
   - component: {fileID: 198266968083734374}
   - component: {fileID: 199645359472069996}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9838,7 +9838,7 @@ GameObject:
   - component: {fileID: 4703256721773482}
   - component: {fileID: 198181270326050850}
   - component: {fileID: 199820664752431246}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BeamAB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14713,7 +14713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4806424652456670}
   - component: {fileID: 96575799372169198}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14855,7 +14855,7 @@ GameObject:
   - component: {fileID: 198302984453370694}
   - component: {fileID: 65138394354385980}
   - component: {fileID: 54780134100305680}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: vfx_Projectile_ElectricPurpleBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

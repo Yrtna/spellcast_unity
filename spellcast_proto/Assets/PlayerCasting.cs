@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerCasting : MonoBehaviour
 {
-    public GameObject playerProjector;
+    // public GameObject playerProjector;
     public bool isCasting;
     public bool isAiming;
     private MousePositionManager _positionManager;
@@ -16,7 +16,7 @@ public class PlayerCasting : MonoBehaviour
         isAiming = isCasting = false;
         var player = GameObject.FindWithTag("Player");
         _positionManager = player.GetComponent<MousePositionManager>();
-        playerProjector.SetActive(false);
+        // playerProjector.SetActive(false);
     }
 
     private void Update()
@@ -31,7 +31,7 @@ public class PlayerCasting : MonoBehaviour
         {
             isAiming = true;
             isCasting = false;
-            playerProjector.SetActive(true);
+            // playerProjector.SetActive(true);
         }
 
         if (Input.GetKeyUp(KeyCode.Alpha4))
@@ -46,7 +46,7 @@ public class PlayerCasting : MonoBehaviour
         if (isAiming)
         {
             var pos = _positionManager.GetMousePos();
-            playerProjector.transform.position = new Vector3(pos.x, 1, pos.z);
+            // playerProjector.transform.position = new Vector3(pos.x, 1, pos.z);
         }
         if (isCasting)
         {
@@ -58,6 +58,6 @@ public class PlayerCasting : MonoBehaviour
 
     private void DisableProjector()
     {
-        playerProjector.SetActive(false);
+        // playerProjector.SetActive(false);
     }
 }

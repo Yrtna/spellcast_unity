@@ -7,6 +7,10 @@ TagManager:
   - Bullet
   - FxTemporaire
   - BulletSpawn
+  - Enemy
+  - KillCounter
+  - Loot
+  - ScrollingTextManager
   layers:
   - Default
   - TransparentFX
@@ -17,8 +21,8 @@ TagManager:
   - 
   - 
   - GroundTargeting
-  - 
-  - 
+  - Loot
+  - Spells
   - 
   - 
   - 

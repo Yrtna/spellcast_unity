@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4264005744286462}
   - component: {fileID: 96805598431632590}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4561848893392620}
   - component: {fileID: 96206395051397510}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4248019281262528}
   - component: {fileID: 96678858768219684}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 65604217640661994}
   - component: {fileID: 54674166311131586}
   - component: {fileID: 111889018376725686}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: vfx_Projectile_SpinYellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5376,7 +5376,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4478032693588576}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5410,7 +5410,7 @@ GameObject:
   - component: {fileID: 4053463574255188}
   - component: {fileID: 198403105780183816}
   - component: {fileID: 199721608630591534}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -15,6 +15,7 @@ MonoBehaviour:
   Name: Meteor
   iconSprite: {fileID: 21300000, guid: 2d0997ac1b1fd664e98202450e7ea2d7, type: 3}
   BaseCooldown: 0.5
+  damage: 50
   BindName: Fire1
   projectileForce: 300
   projectile: {fileID: 54013935248017186, guid: eca1ff6741def5a468081e17839fc91e, type: 3}
