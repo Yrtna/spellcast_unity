@@ -17,5 +17,5 @@ MonoBehaviour:
   BaseCooldown: 2
   damage: 40
   BindName: Fire2
-  projectileForce: 150
+  projectileForce: 0
   projectile: {fileID: 54013935248017186, guid: ba44394998abfd74691113457d3c133f, type: 3}

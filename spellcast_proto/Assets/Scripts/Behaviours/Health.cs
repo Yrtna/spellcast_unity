@@ -10,6 +10,7 @@ namespace Behaviours
         [SerializeField] private int maxHealth = 100;
         [SerializeField] private int currentHealth;
 
+        public int DamageMultiplier = 1;
         private ScrollingTextManager _scrollingTextManager;
         public int MaxHealth => maxHealth;
 
@@ -27,10 +28,12 @@ namespace Behaviours
 
         public void Damage(int qty)
         {
+            qty *= DamageMultiplier;
             if (qty < 0)
                 throw new Exception("Health.TakeDamage(int qty) => qty must be >= 0");
             CurrentHealth -= qty;
-            _scrollingTextManager.NewDamage(qty, transform);
+            if (_scrollingTextManager != null)
+                _scrollingTextManager.NewDamage(qty, transform);
             if (CurrentHealth > 0) return;
             CurrentHealth = 0;
             Die();

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyAbility : MonoBehaviour
 {
-    [SerializeField] private Ability ability;
+    [SerializeField] public Ability ability;
     // [SerializeField] private GameObject weaponHolder;
     private float _cooldownDuration;
     private float _nextReadyTime;

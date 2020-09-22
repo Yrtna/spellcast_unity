@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91f241c78ad14e74bdceb47b3d7dfdc7, type: 3}
+  m_Name: Boss_CircleProj
+  m_EditorClassIdentifier: 
+  Name: CircleProj
+  iconSprite: {fileID: 0}
+  BaseCooldown: 0.1
+  damage: 15
+  BindName: New Bind
+  projectileForce: 5
+  projectile: {fileID: 54705770189447398, guid: 5d777067c17b96c43a3bd547d25cb893, type: 3}
+  spellsToCast: 20
+  radius: 4

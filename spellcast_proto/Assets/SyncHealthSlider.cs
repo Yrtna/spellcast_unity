@@ -27,6 +27,8 @@ public class SyncHealthSlider : MonoBehaviour
     {
         _healthSlider.value = _unitHealth.CurrentHealth;
         Bar.gameObject.SetActive(_unitHealth.CurrentHealth < _unitHealth.MaxHealth);
+        if (_unitHealth.CurrentHealth <= 0)
+            gameObject.SetActive(false);
     }
 
     private void LateUpdate()

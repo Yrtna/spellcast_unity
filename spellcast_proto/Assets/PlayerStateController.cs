@@ -15,7 +15,7 @@ public class PlayerStateController : MonoBehaviour, IKillable
     void Start()
     {
         _health = GetComponent<Health>();
-        _killCounter = GameObject.FindWithTag("KillCounter").GetComponent<KillCounter>();
+        _killCounter = GameObject.FindWithTag("KillCounter")?.GetComponent<KillCounter>();
     }
 
     public void Die()
