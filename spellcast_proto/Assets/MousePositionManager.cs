@@ -12,8 +12,10 @@ public class MousePositionManager : MonoBehaviour
 
     private void Start()
     {
-        // var cursorOffset = new Vector2(cursor.width/2, cursor.height/2);
-        // Cursor.SetCursor(cursor, cursorOffset, CursorMode.Auto);
+#if UNITY_STANDALONE_WIN
+        var cursorOffset = new Vector2(cursor.width / 2, cursor.height / 2);
+        Cursor.SetCursor(cursor, cursorOffset, CursorMode.Auto);
+#endif
     }
 
     void FixedUpdate()
@@ -25,14 +27,6 @@ public class MousePositionManager : MonoBehaviour
             mouseVec = new Vector3(hit.point.x, transform.position.y, hit.point.z);
             transform.LookAt(mouseVec);
         }
-
-        // var position = transform.position;
-        // if (position.y != 0)
-        // {
-        //     position = new Vector3(position.x, 0, position.z);
-        //     transform.position = position;
-        // }
-        
     }
 
     public Vector3 GetMousePos()

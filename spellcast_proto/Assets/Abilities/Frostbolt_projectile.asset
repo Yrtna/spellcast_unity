@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Frostbolt
   iconSprite: {fileID: 21300000, guid: 0d1dc8ade7e63d14da6ea8a209621906, type: 3}
-  BaseCooldown: 0.25
+  BaseCooldown: 0.01
   damage: 25
   BindName: Fire2
   projectileForce: 0

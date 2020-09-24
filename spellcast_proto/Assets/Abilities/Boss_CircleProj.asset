@@ -19,5 +19,5 @@ MonoBehaviour:
   BindName: New Bind
   projectileForce: 5
   projectile: {fileID: 54705770189447398, guid: 5d777067c17b96c43a3bd547d25cb893, type: 3}
-  spellsToCast: 20
-  radius: 4
+  spellsToCast: 30
+  radius: 3

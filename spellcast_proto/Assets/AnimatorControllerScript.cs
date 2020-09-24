@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Behaviours;
 using UnityEngine;
 using UnityEngine.XR;
 
@@ -16,6 +18,9 @@ public class AnimatorControllerScript : MonoBehaviour
     private static readonly int HDir = Animator.StringToHash("hDir");
     private static readonly int VDir = Animator.StringToHash("vDir");
 
+    public GameObject _skillBar;
+    private List<AbilityCooldown> _abilities;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +28,7 @@ public class AnimatorControllerScript : MonoBehaviour
         _animator = GetComponent<Animator>();
         _playerPos = player.transform;
         _mousePos = player.GetComponent<MousePositionManager>();
+        _abilities = _skillBar.GetComponents<AbilityCooldown>().ToList();
     }
 
     // Update is called once per frame
@@ -30,7 +36,6 @@ public class AnimatorControllerScript : MonoBehaviour
     {
         var h = Input.GetAxis("Horizontal");
         var v = Input.GetAxis("Vertical");
-        var isCasting = Input.GetButtonDown("Fire1");
 
         var isMoving = h != 0.0f || v != 0.0f;
 
@@ -38,7 +43,6 @@ public class AnimatorControllerScript : MonoBehaviour
         var direction = (_mousePos.GetMousePos() - _playerPos.position).normalized;
 
         _animator.SetBool(IsMoving, isMoving);
-        _animator.SetBool(IsCasting, isCasting);
         // _animator.SetFloat(HInput, h-direction.x);
         // _animator.SetFloat(VInput, v-direction.z);
         _animator.SetFloat(HInput, h);
@@ -52,5 +56,10 @@ public class AnimatorControllerScript : MonoBehaviour
         _animator.SetFloat(VDir, direction.z);
         if (Input.GetKeyDown(KeyCode.Space))
             Debug.Log($"Direction: {direction} -- ({direction.x}, {direction.y}, {direction.z})");
+    }
+
+    public void Cast()
+    {
+        _abilities.ForEach(s=>s.CastSpell());
     }
 }

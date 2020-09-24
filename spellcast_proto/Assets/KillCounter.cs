@@ -6,12 +6,14 @@ using UnityEngine;
 public class KillCounter : MonoBehaviour
 {
     public int kills = 0;
-
+    public int killGoal = 0;
     private TextMeshProUGUI _textMesh;
+    public bool StageComplete { get; set; } = false;
 
     void Start()
     {
         _textMesh = GetComponent<TextMeshProUGUI>();
+        UpdateText();
     }
 
     public void AddKill()
@@ -20,14 +22,16 @@ public class KillCounter : MonoBehaviour
         UpdateText();
     }
 
-    private void UpdateText()
+    public void UpdateText()
     {
-        _textMesh.text = $"Kills: {kills}";
+        if (_textMesh != null)
+            _textMesh.text = $"Kills: {kills} / {killGoal}";
     }
 
     public void Reset()
     {
         kills = 0;
         UpdateText();
+        StageComplete = false;
     }
 }

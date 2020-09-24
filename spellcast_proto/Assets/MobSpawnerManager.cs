@@ -22,7 +22,7 @@ public class MobSpawnerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        difficultyLevel = Mathf.Abs(_KillCounter.kills / 10) + 1;
+        difficultyLevel = Mathf.Abs(_KillCounter.kills / 5) + 1;
         ActiveMobs = GameObject.FindGameObjectsWithTag("Enemy").ToList();
         if (ActiveMobs.Count < difficultyLevel && difficultyLevel < Spawners.Count)
             SpawnMob();

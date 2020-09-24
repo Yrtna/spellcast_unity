@@ -13,7 +13,7 @@ Shader "Projector/Light" {
 		Pass {
 			ZWrite Off
 			ColorMask RGB
-			Blend DstColor One
+			Blend SrcColor One
 			Offset -1, -1
 	
 			CGPROGRAM

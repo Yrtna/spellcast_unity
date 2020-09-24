@@ -17,7 +17,12 @@ namespace Behaviours
         private float _cooldownDuration;
         private float _nextReadyTime;
         private float _cooldownTimeLeft;
-    
+
+        public Animator _Animator;
+        private int castQueue = 0;
+
+        private bool AnimatorIsCasting =>_Animator.GetBool("isCasting");
+
         // Start is called before the first frame update
         void Start()
         {
@@ -49,7 +54,27 @@ namespace Behaviours
             {
                 AbilityReady();
                 if (Input.GetButton(ability.BindName))
-                    ButtonTriggered();
+                {
+                    if (ability.Name == "Dash" && !AnimatorIsCasting)
+                    {
+                        castQueue = 1;
+                        _Animator.SetTrigger("dash");
+                        _Animator.SetBool("isCasting", true);
+                        ((DashAbility)ability).PreCastAbility();
+                    }
+                    else if (ability.Name == "Channel" && !AnimatorIsCasting)
+                    {
+                        castQueue = 9;
+                        _Animator.SetTrigger("channel");
+                        _Animator.SetBool("isCasting", true);
+                    }
+                    else if (ability.Name == "Meteor" && !AnimatorIsCasting)
+                    {
+                        castQueue = 1;
+                        _Animator.SetTrigger("cast");
+                        _Animator.SetBool("isCasting", true);
+                    }
+                }
             }
             else
             {
@@ -64,15 +89,35 @@ namespace Behaviours
             cooldownText.text = roundedCooldown.ToString(CultureInfo.InvariantCulture);
             darkMask.fillAmount = _cooldownTimeLeft / _cooldownDuration;
         }
-        
+
         private void ButtonTriggered()
         {
             _nextReadyTime = _cooldownDuration + Time.time;
             _cooldownTimeLeft = _cooldownDuration;
             darkMask.enabled = true;
             cooldownText.enabled = true;
-            
+
             ability.TriggerAbility(gameObject.transform);
+            castQueue -= 1;
+            if (castQueue > 0)
+            {
+                _Animator.SetBool("isCasting", true);
+                return;
+            }
+
+            _Animator.SetBool("isCasting", false);
+            if (ability.Name == "Dash")
+                _Animator.ResetTrigger("dash");
+            else if (ability.Name == "Channel")
+                _Animator.ResetTrigger("channel");
+            else if (ability.Name == "Meteor")
+                _Animator.ResetTrigger("cast");
+        }
+
+        public void CastSpell()
+        {
+            if (castQueue > 0)
+                ButtonTriggered();
         }
     }
 }

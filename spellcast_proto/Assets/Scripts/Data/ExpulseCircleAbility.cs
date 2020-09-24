@@ -19,7 +19,7 @@ namespace Data
         public override void TriggerAbility(Transform spawn)
         {
             var angle = 360f / spellsToCast;
-            var rotationOffset = Quaternion.AngleAxis(Random.Range(0f, 120f), Vector3.up);
+            var rotationOffset = Quaternion.AngleAxis(Random.Range(-120f, 120f), Vector3.up);
             for (var i = 0; i < spellsToCast; i++)
             {
                 var rotation = Quaternion.AngleAxis(i * angle, Vector3.up);

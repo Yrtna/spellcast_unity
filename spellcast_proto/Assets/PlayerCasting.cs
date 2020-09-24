@@ -50,8 +50,8 @@ public class PlayerCasting : MonoBehaviour
         }
         if (isCasting)
         {
-            isCasting = false;
-            isAiming = false;
+            // isCasting = false;
+            // isAiming = false;
             // Invoke(nameof(DisableProjector), 2f);
         }
     }

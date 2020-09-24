@@ -66,6 +66,6 @@ Material:
     - _MainTextureVSpeed: 0
     - _NoiseAmount: 0.1144851
     m_Colors:
-    - _Color: {r: 0, g: 1, b: 0.9941113, a: 1}
+    - _Color: {r: 0, g: 0.9750786, b: 1, a: 1}
     - _TintColor: {r: 0, g: 0.8121791, b: 1, a: 0.18039216}
   m_BuildTextureStacks: []

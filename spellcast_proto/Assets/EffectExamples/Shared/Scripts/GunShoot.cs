@@ -36,7 +36,7 @@ public class GunShoot : MonoBehaviour {
 			nextFire = Time.time + fireRate;
 			muzzleFlash.Play();
 			cartridgeEjection.Play();
-			anim.SetTrigger ("Fire");
+			// anim.SetTrigger ("Fire");
 
 			Vector3 rayOrigin = gunEnd.position;
 			RaycastHit hit;

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Behaviours;
 using Data;
@@ -39,6 +40,8 @@ public class BullBossAI : MonoBehaviour, IKillable
     private Health _health;
     private bool isDead = false;
 
+    private KillCounter _killCounter;
+
     private static readonly int Defy = Animator.StringToHash("defy");
     private static readonly int Jump = Animator.StringToHash("jump");
     private static readonly int Attack03 = Animator.StringToHash("attack_03");
@@ -47,6 +50,8 @@ public class BullBossAI : MonoBehaviour, IKillable
     private static readonly int Death = Animator.StringToHash("die");
     private static readonly int IsDead = Animator.StringToHash("IsDead");
 
+    private bool bossActive = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,11 +59,26 @@ public class BullBossAI : MonoBehaviour, IKillable
         _target = GameObject.FindWithTag("Player").transform;
         _agent = GetComponent<NavMeshAgent>();
         _health = GetComponent<Health>();
+        _killCounter = GameObject.FindWithTag("KillCounter").GetComponent<KillCounter>();
+    }
+
+    private void OnEnable()
+    {
+        GetComponent<CapsuleCollider>().enabled = false;
+        Invoke(nameof(ActivateBoss), 4f);
+    }
+
+    private void ActivateBoss()
+    {
+        GetComponent<CapsuleCollider>().enabled = true;
+        bossActive = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!bossActive)
+            return;
         if (_bossState == BossState.Die)
             BossDeath();
         if (isDead || _bossState == BossState.Dizzy)
@@ -183,7 +203,7 @@ public class BullBossAI : MonoBehaviour, IKillable
         _bossState = BossState.Dizzy;
         _bossAnimator.SetBool(IsDizzy, true);
         Invoke(nameof(SetFollow), dizzyDuration);
-        // _health.DamageMultiplier = 5;
+        _health.DamageMultiplier = 5;
     }
 
     public void SetFollow()
@@ -193,7 +213,7 @@ public class BullBossAI : MonoBehaviour, IKillable
         _bossState = BossState.Follow;
         _bossAnimator.SetBool(IsDizzy, false);
         _bossAnimator.SetTrigger(Walk);
-        // _health.DamageMultiplier = 1;
+        _health.DamageMultiplier = 1;
     }
 
 
@@ -209,7 +229,7 @@ public class BullBossAI : MonoBehaviour, IKillable
 
     public void BossDeath()
     {
-        if (!isDead) 
+        if (!isDead)
             _bossAnimator.SetTrigger(Death);
         isDead = true;
     }
@@ -221,6 +241,8 @@ public class BullBossAI : MonoBehaviour, IKillable
         GetComponent<CapsuleCollider>().enabled = false;
         _bossState = BossState.Die;
         _bossAnimator.SetTrigger(Death);
+        _bossAnimator.SetBool(IsDizzy, false);
         isDead = true;
+        _killCounter.AddKill();
     }
 }

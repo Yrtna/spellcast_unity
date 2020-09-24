@@ -15,5 +15,7 @@ MonoBehaviour:
   Name: Dash
   iconSprite: {fileID: 21300000, guid: ee34195976181ef4b83f98f5034ab668, type: 3}
   BaseCooldown: 1.5
+  damage: 0
   BindName: LShift
-  dashMultiplier: 300
+  CastProjector: {fileID: 7942475434473599612, guid: 489cc9e7720b9e545927aab0ed277c77, type: 3}
+  dashMultiplier: 12
