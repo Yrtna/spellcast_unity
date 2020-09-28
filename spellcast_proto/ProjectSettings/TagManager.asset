@@ -11,6 +11,8 @@ TagManager:
   - KillCounter
   - Loot
   - ScrollingTextManager
+  - IGMenu
+  - AudioManager
   layers:
   - Default
   - TransparentFX

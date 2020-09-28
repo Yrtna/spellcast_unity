@@ -33,15 +33,6 @@ public class PlayerStateController : MonoBehaviour, IKillable
 
     public void Respawn()
     {
-        // var enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        // enemies.ForEach(s => Destroy(s));
-        // var loot = GameObject.FindGameObjectsWithTag("Loot");
-        // loot.ForEach(s => Destroy(s));
-        //
-        // _killCounter.Reset();
-        // _health.Heal(_health.MaxHealth);
-        // gameObject.SetActive(true);
-        // gameObject.transform.position = Vector3.zero;
         var current = SceneManager.GetActiveScene();
         SceneManager.LoadScene(current.name);
     }
@@ -51,15 +42,17 @@ public class PlayerStateController : MonoBehaviour, IKillable
         if (_killCounter && _killCounter.kills >= killsToComplete)
         {
             _killCounter.StageComplete = true;
-            Time.timeScale = 0.2f;
-            Invoke(nameof(LoadBoss), 2f);
+            if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("BossDev"))
+            {
+                Time.timeScale = 0.2f;
+                Invoke(nameof(LoadBoss), 2f);
+            }
         }
     }
 
     public void LoadBoss()
     {
         Time.timeScale = 1f;
-        if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("BossDev"))
-            SceneManager.LoadScene("BossDev");
+        SceneManager.LoadScene("BossDev");
     }
 }

@@ -54,8 +54,6 @@ public class AnimatorControllerScript : MonoBehaviour
         var direction = (_mousePos.GetMousePos() - _playerPos.position).normalized;
         _animator.SetFloat(HDir, direction.x);
         _animator.SetFloat(VDir, direction.z);
-        if (Input.GetKeyDown(KeyCode.Space))
-            Debug.Log($"Direction: {direction} -- ({direction.x}, {direction.y}, {direction.z})");
     }
 
     public void Cast()

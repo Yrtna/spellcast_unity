@@ -51,6 +51,7 @@ public class BullBossAI : MonoBehaviour, IKillable
     private static readonly int IsDead = Animator.StringToHash("IsDead");
 
     private bool bossActive = false;
+    private AudioManagerScript _audioManager;
 
     // Start is called before the first frame update
     void Start()
@@ -60,6 +61,7 @@ public class BullBossAI : MonoBehaviour, IKillable
         _agent = GetComponent<NavMeshAgent>();
         _health = GetComponent<Health>();
         _killCounter = GameObject.FindWithTag("KillCounter").GetComponent<KillCounter>();
+        _audioManager = GameObject.FindWithTag("AudioManager").GetComponent<AudioManagerScript>();
     }
 
     private void OnEnable()
@@ -154,6 +156,7 @@ public class BullBossAI : MonoBehaviour, IKillable
         eyesAbility.rightEye = rightEye;
         eyesAbility.target = _target;
         laserEyes.Cast();
+        _audioManager.PlayOneShot("laser", 0.2f);
     }
 
     // jump
@@ -172,6 +175,7 @@ public class BullBossAI : MonoBehaviour, IKillable
             return;
         circleCastCount -= 1;
         expulseCircleAbility.Cast();
+        _audioManager.PlayOneShot("pound", 0.4f);
         if (circleCastCount == 0)
             SetDizzy();
     }
@@ -194,6 +198,7 @@ public class BullBossAI : MonoBehaviour, IKillable
             return;
         coneCastCount -= 1;
         expulseConeAbility.Cast();
+        _audioManager.PlayOneShot("smash", 0.4f);
     }
 
     public void SetDizzy()

@@ -21,12 +21,14 @@ namespace Behaviours
         public Animator _Animator;
         private int castQueue = 0;
 
+        private AudioManagerScript _audioManager;
         private bool AnimatorIsCasting =>_Animator.GetBool("isCasting");
 
         // Start is called before the first frame update
         void Start()
         {
             Initialize(ability, weaponHolder);
+            _audioManager = GameObject.FindWithTag("AudioManager").GetComponent<AudioManagerScript>();
         }
 
         private void Initialize(Ability selectedAbility, GameObject weaponHolderGameObject)
@@ -98,6 +100,7 @@ namespace Behaviours
             cooldownText.enabled = true;
 
             ability.TriggerAbility(gameObject.transform);
+            _audioManager.PlayOneShot(ability.Name, 0.5f);
             castQueue -= 1;
             if (castQueue > 0)
             {

@@ -25,12 +25,4 @@ public class ScrollingTextManager : MonoBehaviour
         text.text = $"+{qty}";
         text.color = Color.green;
     }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            NewDamage(420, GameObject.FindWithTag("Player").transform);
-        }
-    }
 }

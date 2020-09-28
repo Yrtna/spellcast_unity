@@ -16,6 +16,7 @@ public class EnemyController : MonoBehaviour, IKillable
     private DropLoot _loot;
     public float FollowDistance = 5f;
     private Animator _animator;
+    private AudioManagerScript _audioManager;
 
     public bool isPaused;
     private static readonly int IsMoving = Animator.StringToHash("isMoving");
@@ -31,6 +32,7 @@ public class EnemyController : MonoBehaviour, IKillable
         _killCounter = GameObject.FindWithTag("KillCounter").GetComponent<KillCounter>();
         _loot = GetComponent<DropLoot>();
         _animator = GetComponent<Animator>();
+        _audioManager = GameObject.FindWithTag("AudioManager").GetComponent<AudioManagerScript>();
     }
 
     // Update is called once per frame
@@ -46,7 +48,10 @@ public class EnemyController : MonoBehaviour, IKillable
         {
             var cast = _ability.Cast();
             if (cast && !_animator.GetBool(IsAttacking))
+            {
                 _animator.SetBool(IsAttacking, true);
+                _audioManager.PlayOneShot("minion_cast", 0.4f);
+            }
         }
     }
 
