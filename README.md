@@ -7,6 +7,7 @@
 - Health System
 - Enemy AI / Navmesh
 - Blend Tree Animation/AI
+- Enemies can drop Loot
 - Music/Sound
 
 ## Player Spells
