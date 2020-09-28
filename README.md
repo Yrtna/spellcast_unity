@@ -1,5 +1,14 @@
 # Mage Arena
 
+## Main Features
+
+- Mouse Aiming / WASD movement
+- Ability/Cooldown System
+- Health System
+- Enemy AI / Navmesh
+- Blend Tree Animation/AI
+- Music/Sound
+
 ## Player Spells
 ### LMB - Fireball
 ![firespell](https://i.imgur.com/gunARvs.png)
