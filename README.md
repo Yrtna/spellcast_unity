@@ -1,5 +1,11 @@
 # Mage Arena
 
+## Table of Contents
+[Main Features](https://github.com/Yrtna/spellcast_unity/blob/master/README.md#main-features)
+[Player Spells](https://github.com/Yrtna/spellcast_unity/blob/master/README.md#player-spells)
+[Minion Spells](https://github.com/Yrtna/spellcast_unity/blob/master/README.md#minion-spells)
+[Boss Spells](https://github.com/Yrtna/spellcast_unity/blob/master/README.md#boss-spells)
+
 ## Main Features
 
 - Mouse Aiming / WASD movement
