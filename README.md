@@ -1,5 +1,9 @@
 # Mage Arena
 
+## Introduction
+
+Mage Arena is a simple dungeon crawler/arena game where you must survive/travel a level to reach a boss, and then battle the boss to win the level.
+
 ## Table of Contents
 * [Main Features](https://github.com/Yrtna/spellcast_unity/blob/master/README.md#main-features)
 * [Player Spells](https://github.com/Yrtna/spellcast_unity/blob/master/README.md#player-spells)
